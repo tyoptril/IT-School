@@ -8,36 +8,52 @@
   </head>
   <body></body>
   <body>
-    <nav class="flex flex-row w-full justify-between px-[100px] py-[20px]">
-      <div class="flex flex-row gap-[100px] items-center">
-        <img src="IMG/Logo.png" alt="" />
-        <ul class="flex flex-row gap-[30px] font-medium text-[14px] text-black">
+    <nav class="flex flex-row w-full justify- items-center px-6 md:px-[100px] py-[20px]">
+      <div class="flex flex-row gap-4 md:gap-[100px] items-center">
+        <img src="IMG/Logo.png" alt="" class="h-8 md:h-auto"/>
+        <ul class="hidden lg:flex flex-row gap-[30px] font-medium text-[14px] text-black">
           <li><a href="">Program</a></li>
           <li><a href="">Kurikulum</a></li>
           <li><a href="">Testimonial</a></li>
           <li><a href="">FAQ</a></li>
         </ul>
       </div>
+      <div class="flex items-center gap-4">
       <button
         class="bg-[#1B59E0] px-[15px] py-[5px] font-semibold text-[14px] text-white rounded-[5px]"
       >
         DAFTAR
       </button>
+      <input type="checkbox" id="menu-toggle" class="peer hidden"/>
+      <label for="menu-toggle" class="lg:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 cursor pointer z-50">
+        <span class="block w-7 h-0.5 bg-black transition-all duration-300 peer-checked:rotate-45 peer-checked:translate-y-2"></span>
+        <span class="block w-7 h-0.5 bg-black transition-all duration-300 peer-checked:opacity-0"></span>
+        <span class="block w-7 h-0.5 bg-black transition-all duration-300 peer-checked:-rotate-45 peer-checked:-translate-y-2"></span>
+      </label>
+
+      <div class="hidden peer-checked:flex absolute top-full left-0 w-full bg-white border-t border-gray-100 flex-col items-center py-8 gap-6 shadow-x1 lg:hidden animate-in-from-top duration-300">
+        <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">Program</a>
+        <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">Kurikulum</a>
+        <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">Testimonial</a>
+        <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">FAQ</a>
+        <button class="bg-[#1B59E0] px-[15px] py-[5px] font-semibold text-[14px] text-white rounded-[8px]">DAFTAR</button>
+      </div>
+      </div>
     </nav>
     <main
-      class="bg-[#EBF0FA] flex flex-row justify-between items-center pl-[100px] gap-[45px]"
+      class="bg-[#EBF0FA] flex flex-col md:flex-row justify-between items-center px-6 md:pl-[100px] py-10 md:py-0 gap-[45px]"
     >
-      <div class="w-full h-fit gap-[60px] flex flex-col">
+      <div class="w-full h-fit gap-[40px] md:gap-[60px] flex flex-col text-center md:text-left">
         <div class="flex flex-col gap-[17px]">
-          <h1 class="font-bold text-[60px]/[55px]">
+          <h1 class="font-bold text-3xl md:text-[60px]/[55px]">
             Sekolah IT Berbasis Qur’an untuk Masa Depan Digital
           </h1>
-          <p class="text-[20px]">
+          <p class="text-base md:text-[20px]">
             Belajar coding dari nol sampai siap kerja, dengan lingkungan Islami
             dan pembinaan karakter
           </p>
         </div>
-        <div class="grid grid-cols-2 row-span-1 gap-[20px]">
+        <div class="grid grid-cols-2 row-span-1 gap-[20px] max-w-sm mx-auto md:mx-0">
           <div class="flex flex-row gap-[10px] font-medium text-[18px]">
             <img src="IMG/Vector.png" alt="" />
             <p>Project-based</p>
@@ -56,10 +72,10 @@
           </div>
         </div>
         <div
-          class="flex flex-row gap-[150px] w-full bg-white px-[25px] py-[25px] justify-between rounded-[15px]"
+          class="flex flex-col sm:flex-row gap-6 md:gap-[150px] w-full bg-white px-[25px] py-[25px] justify-between items-center rounded-[15px]"
         >
           <div>
-            <p class="font-medium text-[20px]">
+            <p class="font-medium text-lg md:text-[20px]">
               Pendaftaran Gelombang 1 Dibuka!
             </p>
             <p class="font-medium text-[13px]">
@@ -67,56 +83,56 @@
             </p>
           </div>
           <button
-            class="bg-[#1B59DF] px-[10px] py-[10px] rounded-[10px] text-[15px] font-semibold text-white"
+            class="bg-[#1B59DF] w-full sm:w-auto px-[10px] py-[10px] rounded-[10px] text-[15px] font-semibold text-white"
           >
             Daftar Sekarang!
           </button>
         </div>
       </div>
-      <img src="IMG/image 29.png" alt="" />
+      <img src="IMG/image 29.png" alt="" class="w-full-md md-max-w-none md:w-auto"/>
     </main>
-    <section class="flex flex-col px-[100px] py-[50px] gap-[30px] items-center">
-      <h1 class="font-semibold text-[60px]">
+    <section class="flex flex-col px-6 md:px-[100px] py-12 md:py-[50px] gap-10 md:gap-[30px] items-center">
+      <h1 class="font-semibold text-2xl text-[50px] md:text-[50px] text-center">
         Dipercaya Banyak Siswa dan Orang Tua
       </h1>
-      <div class="flex flex-row gap-[130px]">
+      <div class="flex flex-col md:flex-row gap-6 md:gap-[130px]">
         <div
-          class="flex flex-col max-w-[230px] gap-[38px] p-[20px] items-center justify-center shadow-md shadow-black rounded-[15px]"
+          class="flex flex-col w-full md:max-w-[230px] gap-6 md:gap-[38px] p-[20px] items-center justify-center shadow-sm rounded-[15px]"
         >
           <img src="IMG/Frame.png" alt="" class="w-[80px]" />
-          <p class="max-w-[190px] text-[18px] text-center font-medium">
+          <p class="max-w-[190px] text-base md:text-[18px] text-center font-medium">
             Ratusan siswa aktif belajar
           </p>
         </div>
         <div
-          class="flex flex-col max-w-[230px] gap-[38px] p-[20px] items-center justify-center shadow-md shadow-black rounded-[15px]"
+          class="flex flex-col w-full md:max-w-[230px] gap-6 md:gap-[38px] p-[20px] items-center justify-center shadow-sm rounded-[15px]"
         >
           <img src="IMG/Frame (1).png" alt="" class="w-[80px]" />
-          <p class="max-w-[190px] text-[18px] text-center font-medium">
+          <p class="max-w-[190px] text-base md:text-[18px] text-center font-medium">
             Alumni dengan skill siap pakai
           </p>
         </div>
         <div
-          class="flex flex-col max-w-[230px] gap-[38px] p-[20px] items-center justify-center shadow-md shadow-black rounded-[15px]"
+          class="flex flex-col w-full md:max-w-[230px] gap-6 md:gap-[38px] p-[20px] items-center justify-center shadow-sm rounded-[15px]"
         >
           <img src="IMG/Frame (2).png" alt="" class="w-[80px]" />
-          <p class="max-w-[190px] text-[18px] text-center font-medium">
+          <p class="max-w-[190px] text-base md:text-[18px] text-center font-medium">
             Prestasi di berbagai kompetisi
           </p>
         </div>
       </div>
     </section>
-    <section class="bg-[#EBF0FA] flex flex-col items-center gap-[50px] px-[100px] py-[50px]">
-    <h1 class="text-50px font-semibold">Pilih Program Sesuai Kebutuhanmu</h1>
-    <div class="flex flex-row gap-[10px]">
-      <div class="bg-white max-w-[500px] shadow-sm rounded-[20px] p-[20px] flex flex-col gap-[10px]">
-        <h2 class="bg-[#EBF0FA] text-[20px] font-medium [px-20px] py-[6px] [rounded-10px]">PROGRAM ASRAMA (BOARDING)</h2>
+    <section class="bg-[#EBF0FA] flex flex-col items-center gap-10 px-6 md:px-[100px] py-12 md:py-[50px]">
+    <h1 class="text-2xl md:text-50px font-semibold text center">Pilih Program Sesuai Kebutuhanmu</h1>
+    <div class="flex flex-col lg:flex-row gap-6 md:gap-[60px]">
+      <div class="bg-white w-full max-w-[500px] shadow-sm rounded-[20px] p-[20px] flex flex-col gap-[10px]">
+        <h2 class="bg-[#EBF0FA] text-lg md:text-[20px] font-semibold px-[20px] py-[6px] rounded-[10px]">PROGRAM ASRAMA (BOARDING)</h2>
             <div class="bg-white p-[10px]">
       <div class="flex flex-row gap-[10px] origin-center">
         <img src="IMG/Vector.png" alt="">
         <p class="text-[13px] font-medium">Belajar & Pembinaan Sepanjang Hari</p>
       </div>
-      <p class="bg-[#C3CFF1] text-[16px] font-medium p-[15px] rounded-[12px]">Program dengan sistem terarah yang menggabungkan akademik, IT, dan pembentukan karakter dalam satu lingkungan.</p>
+      <p class="bg-[#C3CFF1] text-sm md:text-[16px] font-medium p-[15px] rounded-[12px]">Program dengan sistem terarah yang menggabungkan akademik, IT, dan pembentukan karakter dalam satu lingkungan.</p>
       <div>
       <p class="text-[#1B59DF] text-[15px] font-medium">Keunggulan Boarding</p>
       <ul>
@@ -128,14 +144,14 @@
       </div>
       </div>
     </div>
-      <div class="bg-white max-w-[500px] shadow-sm rounded-[20px] p-[20px] flex flex-col gap-[10px]">
-        <h2 class="bg-[#EBF0FA] text-[20px] font-medium [px-20px] py-[6px] [rounded-10px]">PROGRAM ASRAMA (BOARDING)</h2>
+      <div class="bg-white w-full max-w-[500px] shadow-sm rounded-[20px] p-[20px] flex flex-col gap-[10px]">
+        <h2 class="bg-[#EBF0FA] text-lg md:text-[20px] font-medium [px-20px] py-[6px] [rounded-10px]">PROGRAM ASRAMA (BOARDING)</h2>
             <div class="bg-white p-[10px]">
       <div class="flex flex-row gap-[10px]">
         <img src="IMG/Vector.png" alt="">
         <p class="text-[13px] font-medium">Belajar & Pembinaan Sepanjang Hari</p>
       </div>
-      <p class="bg-[#C3CFF1] text-[16px] font-medium p-[15px] rounded-[12px]">Program dengan sistem terarah yang menggabungkan akademik, IT, dan pembentukan karakter dalam satu lingkungan.</p>
+      <p class="bg-[#C3CFF1] text-sm md:text-[16px] font-medium p-[15px] rounded-[12px]">Program dengan sistem terarah yang menggabungkan akademik, IT, dan pembentukan karakter dalam satu lingkungan.</p>
       <div>
       <p class="text-[#1B59DF] text-[15px] font-medium">Keunggulan Boarding</p>
       <ul>
