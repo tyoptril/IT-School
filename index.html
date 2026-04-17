@@ -8,36 +8,64 @@
   </head>
   <body></body>
   <body>
-    <nav class="flex flex-row w-full justify- items-center px-6 md:px-[100px] py-[20px]">
+    <nav
+      class="sticky top-0 z-50 bg-white shadow-sm flex flex-row w-full justify-between items-center px-6 md:px-[100px] py-[20px]"
+    >
       <div class="flex flex-row gap-4 md:gap-[100px] items-center">
-        <img src="IMG/Logo.png" alt="" class="h-8 md:h-auto"/>
-        <ul class="hidden lg:flex flex-row gap-[30px] font-medium text-[14px] text-black">
+        <img src="IMG/Logo.png" alt="" class="h-8 md:h-auto" />
+        <ul
+          class="hidden lg:flex flex-row gap-[30px] font-medium text-[14px] text-black"
+        >
           <li><a href="">Program</a></li>
           <li><a href="">Kurikulum</a></li>
           <li><a href="">Testimonial</a></li>
           <li><a href="">FAQ</a></li>
         </ul>
       </div>
-      <div class="flex items-center gap-4">
-      <button
-        class="bg-[#1B59E0] px-[15px] py-[5px] font-semibold text-[14px] text-white rounded-[5px]"
-      >
-        DAFTAR
-      </button>
-      <input type="checkbox" id="menu-toggle" class="peer hidden"/>
-      <label for="menu-toggle" class="lg:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 cursor pointer z-50">
-        <span class="block w-7 h-0.5 bg-black transition-all duration-300 peer-checked:rotate-45 peer-checked:translate-y-2"></span>
-        <span class="block w-7 h-0.5 bg-black transition-all duration-300 peer-checked:opacity-0"></span>
-        <span class="block w-7 h-0.5 bg-black transition-all duration-300 peer-checked:-rotate-45 peer-checked:-translate-y-2"></span>
-      </label>
 
-      <div class="hidden peer-checked:flex absolute top-full left-0 w-full bg-white border-t border-gray-100 flex-col items-center py-8 gap-6 shadow-x1 lg:hidden animate-in-from-top duration-300">
-        <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">Program</a>
-        <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">Kurikulum</a>
-        <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">Testimonial</a>
-        <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">FAQ</a>
-        <button class="bg-[#1B59E0] px-[15px] py-[5px] font-semibold text-[14px] text-white rounded-[8px]">DAFTAR</button>
-      </div>
+      <div class="flex items-center gap-4">
+        <button
+          class="bg-[#1B59E0] px-[15px] py-[5px] font-semibold text-[14px] text-white rounded-[5px] hidden lg:flex"
+        >
+          DAFTAR
+        </button>
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <label
+          for="menu-toggle"
+          class="lg:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 cursor-pointer z-50"
+        >
+          <span
+            class="block w-7 h-0.5 bg-black transition-all duration-300 peer-checked:rotate-45 peer-checked:translate-y-2"
+          ></span>
+          <span
+            class="block w-7 h-0.5 bg-black transition-all duration-300 peer-checked:opacity-0"
+          ></span>
+          <span
+            class="block w-7 h-0.5 bg-black transition-all duration-300 peer-checked:-rotate-45 peer-checked:-translate-y-2"
+          ></span>
+        </label>
+
+        <div
+          class="hidden peer-checked:flex absolute top-full left-0 w-full bg-white border-t border-gray-100 flex-col items-center py-8 gap-6 shadow-xl lg:hidden animate-in-from-top duration-300"
+        >
+          <a href="#" class="text-lg font-medium hover:text-[#1B59DF]"
+            >Program</a
+          >
+          <a href="#" class="text-lg font-medium hover:text-[#1B59DF]"
+            >Kurikulum</a
+          >
+          <a href="#" class="text-lg font-medium hover:text-[#1B59DF]"
+            >Testimonial</a
+          >
+          <a href="#" class="text-lg font-medium hover:text-[#1B59DF]">FAQ</a>
+          <button
+            class="bg-[#1B59E0] px-[15px] py-[5px] font-semibold text-[14px] text-white rounded-[8px]"
+          >
+            DAFTAR
+          </button>
+        </div>
       </div>
     </nav>
     <main
@@ -255,5 +283,154 @@
         <img src="IMG/CTAImg.png" alt="">
       </div>
     </section>
+    <section
+      class="bg-[#EBF0FA] flex flex-col items-center gap-10 px-6 md:px-[100px] py-12 md:py-[50px]"
+    >
+      <h1 class="text-3xl md:text-[50px]/[55px] font-semibold">Testimonial</h1>
+      <div
+        class="bg-white px-6 md:px-[50px] py-[40px] flex flex-col lg:flex-row gap-[30px] rounded-[30px] md:rounded-[40px]"
+      >
+        <div
+          class="w-full lg:max-w-[340px] bg-white shadow-md rounded-[20px] flex flex-col px-[25px] py-[20px] gap-[40px] md:gap-[55px]"
+        >
+          <img src="IMG/Group 393.png" alt="" class="w-[95px]" />
+          <p class="text-lg md:text-[20px]/[30px]">
+            Pembelajaran di sekolah ini membuat anak saya lebih disiplin,
+            mandiri, dan percaya diri
+          </p>
+          <div class="flex flex-row gap-[10px] items-center">
+            <img src="IMG/Ellipse 3.png" alt="" class="object-contain" />
+            <div>
+              <p class="text-[18px] font-medium">wahyu</p>
+              <p class="text-[18px]">wali siswa angkatan 3</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full lg:max-w-[340px] bg-white shadow-md rounded-[20px] flex flex-col px-[25px] py-[20px] gap-[40px] md:gap-[55px]"
+        >
+          <img src="IMG/Group 393.png" alt="" class="w-[95px]" />
+          <p class="text-lg md:text-[20px]/[30px]">
+            Pembelajaran di sekolah ini membuat anak saya lebih disiplin,
+            mandiri, dan percaya diri
+          </p>
+          <div class="flex flex-row gap-[10px] items-center">
+            <img src="IMG/Ellipse 3.png" alt="" class="object-contain" />
+            <div>
+              <p class="text-[18px] font-medium">wahyu</p>
+              <p class="text-[18px]">wali siswa angkatan 3</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full lg:max-w-[340px] bg-white shadow-md rounded-[20px] flex flex-col px-[25px] py-[20px] gap-[40px] md:gap-[55px]"
+        >
+          <img src="IMG/Group 393.png" alt="" class="w-[95px]" />
+          <p class="text-lg md:text-[20px]/[30px]">
+            Pembelajaran di sekolah ini membuat anak saya lebih disiplin,
+            mandiri, dan percaya diri
+          </p>
+          <div class="flex flex-row gap-[10px] items-center">
+            <img src="IMG/Ellipse 3.png" alt="" class="object-contain" />
+            <div>
+              <p class="text-[18px] font-medium">wahyu</p>
+              <p class="text-[18px]">wali siswa angkatan 3</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full lg:max-w-[340px] bg-white shadow-md rounded-[20px] flex flex-col px-[25px] py-[20px] gap-[40px] md:gap-[55px]"
+        >
+          <img src="IMG/Group 393.png" alt="" class="w-[95px]" />
+          <p class="text-lg md:text-[20px]/[30px]">
+            Pembelajaran di sekolah ini membuat anak saya lebih disiplin,
+            mandiri, dan percaya diri
+          </p>
+          <div class="flex flex-row gap-[10px] items-center">
+            <img src="IMG/Ellipse 3.png" alt="" class="object-contain" />
+            <div>
+              <p class="text-[18px] font-medium">wahyu</p>
+              <p class="text-[18px]">wali siswa angkatan 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-[#EBF0FA] flex flex-col items-center gap-[50px] px-6 md:px-[100px] py-12 md:py-[50px]"
+    >
+      <h1 class="text-3xl md:text-[50px]/[55px] font-semibold">FAQ</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-[20px] w-full max-w-6xl">
+        <div
+          class="bg-white w-full max-w-[560px] flex flex-col p-[15px] gap-[15px] rounded-[10px]"
+        >
+          <div class="flex flex-row justify-between items-center">
+            <h2 class="text-lg md:text-[20px] font-semibold">
+              Sekolah apa ini?
+            </h2>
+            <img src="IMG/Frame 464 (1).png" alt="" class="object-contain" />
+          </div>
+          <p class="text-sm md:text-[16px] text-[#757575]">
+            Sekolah ini adalah tempat belajar yang menggabungkan akademik,
+            teknologi, dan pendidikan diniyah untuk membentuk siswa yang siap
+            masa depan.
+          </p>
+        </div>
+        <div
+          class="bg-white w-full max-w-[560px] flex flex-col p-[15px] gap-[15px] rounded-[10px]"
+        >
+          <div class="flex flex-row justify-between items-center">
+            <h2 class="text-lg md:text-[20px] font-semibold">
+              Sekolah apa ini?
+            </h2>
+            <img src="IMG/Frame 464 (1).png" alt="" class="object-contain" />
+          </div>
+          <p class="text-sm md:text-[16px] text-[#757575]">
+            Sekolah ini adalah tempat belajar yang menggabungkan akademik,
+            teknologi, dan pendidikan diniyah untuk membentuk siswa yang siap
+            masa depan.
+          </p>
+        </div>
+        <div
+          class="bg-white w-full max-w-[560px] flex flex-col p-[15px] gap-[15px] rounded-[10px]"
+        >
+          <div class="flex flex-row justify-between items-center">
+            <h2 class="text-[20px] font-semibold">Sekolah apa ini?</h2>
+            <img src="IMG/Frame 464.png" alt="" class="object-contain" />
+          </div>
+        </div>
+        <div
+          class="bg-white w-full max-w-[560px] flex flex-col p-[15px] gap-[15px] rounded-[10px]"
+        >
+          <div class="flex flex-row justify-between items-center">
+            <h2 class="text-[20px] font-semibold">Sekolah apa ini?</h2>
+            <img src="IMG/Frame 464.png" alt="" class="object-contain" />
+          </div>
+        </div>
+        <div
+          class="bg-white w-full max-w-[560px] flex flex-col p-[15px] gap-[15px] rounded-[10px]"
+        >
+          <div class="flex flex-row justify-between items-center">
+            <h2 class="text-[20px] font-semibold">Sekolah apa ini?</h2>
+            <img src="IMG/Frame 464.png" alt="" class="object-contain" />
+          </div>
+        </div>
+        <div
+          class="bg-white w-full max-w-[560px] flex flex-col p-[15px] gap-[15px] rounded-[10px]"
+        >
+          <div class="flex flex-row justify-between items-center">
+            <h2 class="text-[20px] font-semibold">Sekolah apa ini?</h2>
+            <img src="IMG/Frame 464.png" alt="" class="object-contain" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-[#1B59DF] flex px-6 md:px-[100px] py-[20px] text-white text-center md:text-left"
+    >
+      <p class="w-full">
+        © 2026 Sekolah IT. All Rights Reserved. Powered by Tim Creative
+      </p>
+    </footer>
   </body>
 </html>
